@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Greatcoder registration</title>
+<style>
+input[type = submit]
+	{
+	background-color:green;
+	color:white;
+	border:none;
+	height:40px;
+	width:90px;
+	}
+body
+{
+background-color:skyblue;
+}	
+</style>
+<script>
+function validateform()
+{
+var name1=document.reg.name.value;
+var email1=document.reg.email.value;
+var at=email1.indexof("@");
+var dot=email1.lastindexof(".");
+if(name==null||name=="")
+{
+  alert("Name can't be blank");
+  return false;
+}
+else if(at<1||dot<at+2||dot+2>=email1.length)
+{
+  alert("Please enter a valid E-mali Id");
+}
+}
+</script>
+</head>
+<body>
+<br>
+<br>
+<center>
+<h1>Great Codder Registration!</h1>
+</center>
+<br>
+<br>
+<br>
+<center>
+<form action="Reg" name="reg" onclick="validateform">
+<table width="400px" height="300px" bgcolor="white">
+<tr>
+<td>
+Name:
+</td>
+<td>
+<input type="text" name="name" value="">
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+Email:
+</td>
+<td>
+<input type="text" name="email" value="">
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+phone.no:
+</td>
+<td>
+<input type="number" name="phonenumber" value="">
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+Gender:
+</td>
+<td>
+Male:<input type="radio" name="gender" value="male">Female:<input type="radio" name="gender" value="Female">Other:<input type="radio" name="gender" value="Other">
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+Qulification:
+</td>
+<td>
+<select name="Qulification">
+<option value="">Select Qulification</option>
+<option value="B.tech">B.tech</option>
+<option value="Degree">Degree</option>
+<option value="B.phram">B.phram</option>
+</select>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+DOB:
+</td>
+<td>
+<input type="date" name="dob">
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+<center>
+<input type="submit" value="submit" />
+</center>
+</td>
+</tr>
+</table>
+</body>
+</html>
